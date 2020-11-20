@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+
+    <!-- <link rel="stylesheet" href="./styles/main.css" /> -->
+
+    <link rel="stylesheet" href="./styles/contact_us.css" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+
+
+
+
+
+    <!-- ********** Navigation Bar ********** -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand text-uppercase ml-lg-5" href="#">design monks</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse mr-lg-5" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link text-uppercase"
+                aria-current="page"
+                href="./index.html"
+                >Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="./about_us.html"
+                >About Us
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase active" href="#">Contact Us</a>
+            </li>
+            <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-expanded="false">
+                            Dropdown link
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- *** Navigation Bar END *** -->
+    <div class="container-fluid bg ">
+      <!-- <figure class="text-center"> -->
+        <img src="./images/logo/design_monks_logo.png" class="w-50" alt="">
+      <!-- </figure> -->
+    </div>
+
+    <section id="contact-us" class="pb-3"></section>
+      <div class="container-fluid">
+        <div class="row contact-us-row px-5">
+          <div class="col-xxl-6 col-md-6 px-5 py-3">
+            <!-- <figure class="text-center">
+              <img
+                src="./images/contact-us-page/Layer.png"
+                class="img-fluid w-25"
+                alt="logo"
+              />
+            </figure> -->
+            <figure class="text-center">
+              <img
+                src="./images/contact-us-page/contact-us-img-removebg-preview.png"
+                class="img-fluid "
+                alt="contact-us-img"
+              />
+            </figure>
+          </div>
+          <div class="col-xxl-6 col-md-6 px-5 py-3">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputName1" class="form-label"> Name</label>
+                <input
+                  placeholder="Enter your Full Name"
+                  type="text"
+                  class="form-control"
+                  id="exampleInputName1"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Email address
+                </label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="abc@example.com"
+                  required
+                />
+                <div id="emailHelp" class="form-text text-secondary">
+                  We'll never share your email with anyone else.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label class="pr-4">Gender</label>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="inlineRadioOptions"
+                    id="inlineRadio1"
+                    value="option1"
+                  />
+                  <label class="form-check-label" for="inlineRadio1"
+                    >Female
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="inlineRadioOptions"
+                    id="inlineRadio2"
+                    value="option2"
+                  />
+                  <label class="form-check-label" for="inlineRadio2"
+                    >Male
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="inlineRadioOptions"
+                    id="inlineRadio3"
+                    value="option3"
+                  />
+                  <label class="form-check-label" for="inlineRadio3"
+                    >Others
+                  </label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleDataList" class="form-label"
+                  >Select City</label
+                >
+                <input
+                  placeholder="Type to search..."
+                  class="form-control"
+                  list="datalistOptions"
+                  id="exampleDataList"
+                />
+                <datalist id="datalistOptions">
+                  <option value="Mumbai"></option>
+                  <option value="Pune"></option>
+                  <option value="Delhi"></option>
+                  <option value="Bangalore"></option>
+                  <option value="Chennai"></option>
+                  <option value="Kolkata"></option>
+                </datalist>
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  >Your Message</label
+                >
+                <textarea
+                  placeholder="Tell Us..."
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                ></textarea>
+              </div>
+              <div class="mb-3 form-check">
+                <!-- <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                            <label class="form-check-label" for="exampleCheck1">Check
+                                    me out</label> -->
+              </div>
+              <div class="submitbtn text-center">
+                <button type="submit" class=" btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="wallpaper"></div> -->
+      
+    </section>
+    
+    
+    <!-- Optional javaScript -->
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

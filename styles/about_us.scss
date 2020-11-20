@@ -1,0 +1,281 @@
+//navbar font
+@import url("https://fonts.googleapis.com/css2?family=Cute+Font&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  //font-family: "Ubuntu", sans-serif;
+}
+
+// *** Global END ***
+//
+//
+//**************************************************************************
+//
+//
+// ********** Navigation Bar START **********
+nav {
+  font-family: "Cute Font", cursive;
+  background-color: transparent;
+  // background-image: repeating-linear-gradient(
+  //     135deg,
+  //     rgba(244, 244, 244, 0.06) 0px,
+  //     rgba(244, 244, 244, 0.06) 46px,
+  //     rgba(92, 92, 92, 0.06) 46px,
+  //     rgba(92, 92, 92, 0.06) 79px,
+  //     rgba(208, 208, 208, 0.06) 79px,
+  //     rgba(208, 208, 208, 0.06) 119px,
+  //     rgba(87, 87, 87, 0.06) 119px,
+  //     rgba(87, 87, 87, 0.06) 162px,
+  //     rgba(8, 8, 8, 0.06) 162px,
+  //     rgba(8, 8, 8, 0.06) 187px,
+  //     rgba(206, 206, 206, 0.06) 187px,
+  //     rgba(206, 206, 206, 0.06) 211px,
+  //     rgba(183, 183, 183, 0.06) 211px,
+  //     rgba(183, 183, 183, 0.06) 247px,
+  //     rgba(21, 21, 21, 0.06) 247px,
+  //     rgba(21, 21, 21, 0.06) 288px
+  //   ),
+  //   repeating-linear-gradient(
+  //     135deg,
+  //     rgba(148, 148, 148, 0.06) 0px,
+  //     rgba(148, 148, 148, 0.06) 28px,
+  //     rgba(104, 104, 104, 0.06) 28px,
+  //     rgba(104, 104, 104, 0.06) 58px,
+  //     rgba(236, 236, 236, 0.06) 58px,
+  //     rgba(236, 236, 236, 0.06) 101px,
+  //     rgba(245, 245, 245, 0.06) 101px,
+  //     rgba(245, 245, 245, 0.06) 128px,
+  //     rgba(104, 104, 104, 0.06) 128px,
+  //     rgba(104, 104, 104, 0.06) 167px,
+  //     rgba(90, 90, 90, 0.06) 167px,
+  //     rgba(90, 90, 90, 0.06) 216px,
+  //     rgba(31, 31, 31, 0.06) 216px,
+  //     rgba(31, 31, 31, 0.06) 260px,
+  //     rgba(25, 25, 25, 0.06) 260px,
+  //     rgba(25, 25, 25, 0.06) 305px
+  //   ),
+  //   repeating-linear-gradient(
+  //     135deg,
+  //     rgba(221, 221, 221, 0.06) 0px,
+  //     rgba(221, 221, 221, 0.06) 20px,
+  //     rgba(154, 154, 154, 0.06) 20px,
+  //     rgba(154, 154, 154, 0.06) 66px,
+  //     rgba(60, 60, 60, 0.06) 66px,
+  //     rgba(60, 60, 60, 0.06) 88px,
+  //     rgba(170, 170, 170, 0.06) 88px,
+  //     rgba(170, 170, 170, 0.06) 115px,
+  //     rgba(241, 241, 241, 0.06) 115px,
+  //     rgba(241, 241, 241, 0.06) 131px,
+  //     rgba(99, 99, 99, 0.06) 131px,
+  //     rgba(99, 99, 99, 0.06) 147px,
+  //     rgba(203, 203, 203, 0.06) 147px,
+  //     rgba(203, 203, 203, 0.06) 193px,
+  //     rgba(83, 83, 83, 0.06) 193px,
+  //     rgba(83, 83, 83, 0.06) 204px
+  //   ),
+  //   linear-gradient(90deg, rgb(248, 8, 31), rgb(88, 39, 62));
+
+  .container-fluid {
+    .navbar-brand {
+      font-size: 2rem;
+      font-weight: bolder;
+    }
+  }
+  .navbar-collapse {
+    ul {
+      .nav-item {
+        font-size: 1.7rem;
+        margin: 0 1rem;
+        a {
+          color: #000;
+        }
+      }
+    }
+  }
+}
+
+#main-section {
+  .main-div {
+    .distortion {
+      width: 100%;
+      height: 200px;
+    }
+
+    //
+    //
+    //linear-gradient(
+    //  37deg,
+    //    rgba(40, 21, 236, 0.7),
+    //     rgba(32, 218, 233, 0.7)
+    //   ),
+    //
+    //
+    .container-fluid {
+      background-image: linear-gradient(
+          37deg,
+          rgba(0, 0, 0, 0.7),
+          rgba(1, 1, 1, 0.5)
+        ),
+        url(../kinshuk-bose-oXHCpSjWSqs-unsplash.jpg);
+      background-size: cover;
+      background-attachment: fixed;
+
+      .quote {
+        color: #e0c56e;
+        i {
+          font-size: large;
+          position: relative;
+          bottom: 30px;
+        }
+      }
+
+      .quote-by {
+        font-size: large;
+      }
+      .abt-title {
+        color: #fff;
+        font-size: 2rem;
+      }
+      .row-2 {
+        .card {
+          border-radius: 20px;
+          padding: 5px;
+          background: transparent;
+          border: 1px solid #fff;
+          color: #fff;
+          font-size: large;
+          .card-img-top {
+            border-radius: 20px;
+          }
+          .card-title {
+            letter-spacing: 1px;
+            font-weight: 800;
+          }
+          //     background-color: #007fff;
+          //     border-width: thick;
+          //     box-shadow: 0 0 10px #007fff, inset 0 0 20px #007fff;
+          //     .card-title,
+          //     .card-text {
+          //       color: #fff;
+          //     }
+          transition: all 0.5s;
+          &:hover {
+            transform: scale(1.05);
+          }
+        }
+      }
+    }
+  }
+}
+
+// ********** Footer START **********
+#footer {
+  background-image: linear-gradient(rgba(#000, 0.7), rgba(#000, 0.7)),
+    url(../images/footer/pexels-the-lazy-artist.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-attachment: fixed;
+  z-index: 0;
+  //margin-top: 3rem;
+  .container {
+    position: relative;
+    z-index: 1;
+
+    .ftr-row-1 {
+      padding-top: 1rem;
+      .ftr-column-1 {
+        .footer-logo {
+          .footer-logo-img {
+            width: 20%;
+          }
+        }
+        .footer-text {
+          color: white;
+        }
+      }
+      .ftr-column-2 {
+        h6 {
+          font-size: 1.5rem;
+          color: white;
+        }
+        p {
+          color: white;
+        }
+      }
+    }
+  }
+
+  hr {
+    background-color: #eb311f;
+    border-width: thick;
+    box-shadow: 0 0 10px #eb311f, inset 0 0 20px #eb311f;
+  }
+
+  .ftr-row-2 {
+    .ftr-column-1 {
+      .copyright {
+        color: white;
+      }
+    }
+    .ftr-column-2 {
+      .social {
+        a {
+          //color: black;
+          color: #e0e0ce;
+          .facebook,
+          .instagram,
+          .twitter,
+          .phone {
+            transition: 0.5s ease;
+            &:hover {
+              transform: translateY(-20%);
+            }
+          }
+          .facebook {
+            &:hover {
+              color: #007fff;
+            }
+          }
+          .instagram {
+            &:hover {
+              color: #ee4266;
+            }
+          }
+          .twitter {
+            &:hover {
+              color: #08a4bd;
+            }
+          }
+          .phone {
+            &:hover {
+              color: #05f140;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// *** Footer END ***
+//
+//
+//**************************************************************************
+//
+//

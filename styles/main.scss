@@ -1,0 +1,459 @@
+// GOOGLE FONTS
+//@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alice&display=swap");
+
+//navbar font
+@import url("https://fonts.googleapis.com/css2?family=Cute+Font&display=swap");
+
+//big-text font
+@import url("https://fonts.googleapis.com/css2?family=Cute+Font&family=Nova+Cut&display=swap");
+//
+//
+//
+//
+//
+//
+//
+//
+// ********** Global START **********
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  //font-family: "Ubuntu", sans-serif;
+}
+
+// *** Global END ***
+//
+//
+//**************************************************************************
+//
+//
+// ********** Navigation Bar START **********
+nav {
+  font-family: "Cute Font", cursive;
+  background-color: transparent;
+  //margin-bottom: 2rem;
+
+  .container-fluid {
+    .navbar-brand {
+      font-size: 2rem;
+      font-weight: bolder;
+      //color: #000;
+    }
+  }
+  .navbar-collapse {
+    ul {
+      .nav-item {
+        font-size: 1.7rem;
+        margin: 0 1rem;
+        a {
+          color: #000;
+        }
+      }
+    }
+  }
+}
+
+// *** Navigation Bar END ***
+//
+//
+//**************************************************************************
+//
+//
+// ********** Landing-Page START **********
+#landing-page {
+  // background-image: linear-gradient(
+  //     rgba(52, 73, 94, 0.5),
+  //     rgba(52, 73, 94, 0.5)
+  //   ),
+  //   url(../images/background/landing-background.jpg);
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // width: 100%;
+  // min-height: 100vh;
+  //padding: 0 5rem;
+  //background-color: #fff;
+  // position: relative;
+  // z-index: 0;
+  .landing {
+    background-image: linear-gradient(
+        rgba(52, 73, 94, 0.7) 5%,
+        rgba(52, 73, 94, 0.1) 95%
+      ),
+      url(../images/background/1126834.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 3rem;
+    //background-color: #000;
+
+    .logo {
+      margin-left: 1rem;
+
+      .l-logo {
+        width: 8%;
+        border-radius: 50%;
+        opacity: 80%;
+      }
+    }
+
+    .big-text {
+      color: #fff;
+      font-size: 4rem;
+      text-align: center;
+
+      position: relative;
+      bottom: 3rem;
+
+      font-family: "Cute Font", cursive;
+      font-family: "Nova Cut", cursive;
+    }
+
+    // .explore-btn {
+    //   font-size: larger;
+    // }
+    .explore-btn {
+      margin: 1rem 0;
+      a {
+        color: #fff;
+        border: 1px solid #fff;
+        display: inline-block;
+        font-size: 1rem;
+        text-decoration: none;
+        border-radius: 30px;
+        padding: 0.5rem 2rem;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        transition: all 0.3s;
+        &::before {
+          content: "";
+          position: absolute;
+          //border-radius: 30px;
+          left: 0;
+          top: 0;
+
+          //
+          background-image: linear-gradient(
+              306deg,
+              rgba(54, 54, 54, 0.05) 0%,
+              rgba(54, 54, 54, 0.05) 33.333%,
+              rgba(85, 85, 85, 0.05) 33.333%,
+              rgba(85, 85, 85, 0.05) 66.666%,
+              rgba(255, 255, 255, 0.05) 66.666%,
+              rgba(255, 255, 255, 0.05) 99.999%
+            ),
+            linear-gradient(
+              353deg,
+              rgba(81, 81, 81, 0.05) 0%,
+              rgba(81, 81, 81, 0.05) 33.333%,
+              rgba(238, 238, 238, 0.05) 33.333%,
+              rgba(238, 238, 238, 0.05) 66.666%,
+              rgba(32, 32, 32, 0.05) 66.666%,
+              rgba(32, 32, 32, 0.05) 99.999%
+            ),
+            linear-gradient(
+              140deg,
+              rgba(192, 192, 192, 0.05) 0%,
+              rgba(192, 192, 192, 0.05) 33.333%,
+              rgba(109, 109, 109, 0.05) 33.333%,
+              rgba(109, 109, 109, 0.05) 66.666%,
+              rgba(30, 30, 30, 0.05) 66.666%,
+              rgba(30, 30, 30, 0.05) 99.999%
+            ),
+            linear-gradient(
+              189deg,
+              rgba(77, 77, 77, 0.05) 0%,
+              rgba(77, 77, 77, 0.05) 33.333%,
+              rgba(55, 55, 55, 0.05) 33.333%,
+              rgba(55, 55, 55, 0.05) 66.666%,
+              rgba(145, 145, 145, 0.05) 66.666%,
+              rgba(145, 145, 145, 0.05) 99.999%
+            ),
+            linear-gradient(90deg, rgb(9, 201, 186), rgb(18, 131, 221));
+          //
+          //
+          width: 100%;
+          height: 100%;
+          z-index: -1;
+          transform: rotate(-90deg);
+          transform-origin: bottom left;
+          transition: all 0.3s;
+        }
+        i {
+          transition: all 0.5s;
+        }
+        &:hover {
+          color: #fff;
+          border: 1px solid #262626;
+          transition: all 0.5s;
+          i {
+            color: #e0c56e;
+          }
+          .left-icon {
+            transform: rotate(90deg);
+          }
+          .right-icon {
+            transform: rotate(-90deg);
+          }
+        }
+        // .left-icon {
+        //   transform: rotate(90deg);
+        // }
+        // .right-icon {
+        //   transform: rotate(-90deg);
+        // }
+      }
+      a:hover::before {
+        transform: rotate(0deg);
+      }
+    }
+  }
+  .intro {
+    // background-color: #000;
+    // background-image: linear-gradient(
+    //     220deg,
+    //     rgba(52, 73, 94, 0.3),
+    //     rgba(52, 73, 94, 0.3)
+    //   ),
+    //   url(../kinshuk-bose-oXHCpSjWSqs-unsplash.jpg);
+    background-image: linear-gradient(
+        312deg,
+        rgba(255, 255, 255, 0.5) 40%,
+        transparent 60%
+      ),
+      url(../kinshuk-bose-oXHCpSjWSqs-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5rem;
+    .intro-text {
+      font-family: "Alice", serif;
+      letter-spacing: 3px;
+      //word-spacing: 5px;
+      //color: rgb(233, 233, 233);
+      color: #000;
+      //filter: brightness(1.1);
+      .hide {
+        //background: #000;
+        background: transparent;
+        overflow: hidden;
+        .text {
+          transform: translateY(100%);
+          display: inline-block;
+          font-size: 3rem;
+          font-weight: 800;
+          .red {
+            color: #eb311f;
+            font-size: 5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// .slider {
+//   background-color: #fff;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100vh;
+//   transform: translateY(100%);
+// }
+
+// *** Landing-Page END ***
+//
+//
+//**************************************************************************
+//
+//
+// ********** About-Us START **********
+#about-us {
+  .gradient-background-1 {
+    height: 75vh;
+    width: 50%;
+    opacity: 0.5;
+    background-color: #202d3c;
+    position: absolute;
+    box-shadow: 5px 10px 10px #202d3c, inset 0 0 20px #202d3c;
+  }
+  .container {
+    .abt-row-1 {
+      .abt-column-1 {
+        .abt-title {
+          font-size: 1.5rem;
+          color: #fff;
+        }
+        .abt-tagline {
+          font-weight: bolder;
+        }
+        hr {
+          background-color: #eb311f;
+          border-width: thick;
+          box-shadow: 0 0 10px #eb311f, inset 0 0 20px #eb311f;
+        }
+      }
+      .abt-column-2 {
+        margin-bottom: 5rem;
+        p {
+          font-size: 1.1rem;
+        }
+      }
+    }
+    .abt-row-2 {
+      figure {
+        box-shadow: 0 10px 20px 5px rgba(black, 0.6);
+        padding: 7px;
+        overflow: hidden;
+        border-radius: 20px;
+        .abt-img {
+          width: 100%;
+          border-radius: 20px;
+          transition: all 0.5s;
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+        .abt-img-caption {
+          font-size: 1.5rem;
+          font-weight: bold;
+          -webkit-text-stroke: #000 0.5px;
+          position: absolute;
+          left: 0;
+          right: 0;
+        }
+      }
+    }
+  }
+}
+
+// *** About-Us END ***
+//
+//
+//**************************************************************************
+//
+//
+// ********** Footer START **********
+#footer {
+  background-image: linear-gradient(rgba(#000, 0.7), rgba(#000, 0.7)),
+    url(../images/footer/pexels-the-lazy-artist.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-attachment: fixed;
+  z-index: 0;
+  //margin-top: 3rem;
+  .container {
+    position: relative;
+    z-index: 1;
+
+    .ftr-row-1 {
+      padding-top: 1rem;
+      .ftr-column-1 {
+        .footer-logo {
+          .footer-logo-img {
+            width: 20%;
+          }
+        }
+        .footer-text {
+          color: white;
+        }
+      }
+      .ftr-column-2 {
+        h6 {
+          font-size: 1.5rem;
+          color: white;
+        }
+        p {
+          color: white;
+        }
+      }
+    }
+  }
+
+  hr {
+    background-color: #eb311f;
+    border-width: thick;
+    box-shadow: 0 0 10px #eb311f, inset 0 0 20px #eb311f;
+  }
+
+  .ftr-row-2 {
+    .ftr-column-1 {
+      .copyright {
+        color: white;
+      }
+    }
+    .ftr-column-2 {
+      .social {
+        a {
+          //color: black;
+          color: #e0e0ce;
+          .facebook,
+          .instagram,
+          .twitter,
+          .phone {
+            transition: 0.5s ease;
+            &:hover {
+              transform: translateY(-20%);
+            }
+          }
+          .facebook {
+            &:hover {
+              color: #007fff;
+            }
+          }
+          .instagram {
+            &:hover {
+              color: #ee4266;
+            }
+          }
+          .twitter {
+            &:hover {
+              color: #08a4bd;
+            }
+          }
+          .phone {
+            &:hover {
+              color: #05f140;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// *** Footer END ***
+//
+//
+//**************************************************************************
+//
+//
+//**************************************************************************
+//
+//
